@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 export default function Hero() {
   return (
     <section className="bg-gray-100 py-20 text-center">
@@ -5,12 +7,12 @@ export default function Hero() {
       <p className="text-lg mb-6">
         Discover amazing products at unbeatable prices.
       </p>
-      <a
-        href="/products"
+      <Link
+        to="/products"
         className="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition"
       >
         Shop Now
-      </a>
+      </Link>
     </section>
   );
 }
